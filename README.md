@@ -1,4 +1,4 @@
-# instructor-page-template
+# instructor-webpage-template
 
 > 강사 한 명의 개인 브랜딩 웹페이지를 **AI 코딩 에이전트와 대화하며** 만드는 템플릿입니다.
 > Claude Code · Codex · Antigravity 등 AGENTS.md를 읽는 모든 에이전트에서 동작합니다.
@@ -8,7 +8,7 @@
 ## 전체 흐름 (7단계)
 
 ```
-1. 클론                 git clone ... → cd instructor-page-template
+1. 클론                 git clone ... → cd instructor-webpage-template
 2. 에이전트 실행         Claude Code / Codex / Antigravity 중 하나 실행
 3. "시작" 입력          → AI가 인터뷰를 시작합니다
 4. input/ 에 자료 업로드  프로필 사진, 블로그 글, 이력서 등
@@ -24,23 +24,23 @@
 
 ### Claude Code 사용자
 ```bash
-git clone https://github.com/<your-account>/instructor-page-template.git
-cd instructor-page-template
+git clone https://github.com/<your-account>/instructor-webpage-template.git
+cd instructor-webpage-template
 claude
 ```
 
 ### Codex (OpenAI) 사용자
 ```bash
-git clone https://github.com/<your-account>/instructor-page-template.git
-cd instructor-page-template
+git clone https://github.com/<your-account>/instructor-webpage-template.git
+cd instructor-webpage-template
 codex
 ```
 
 ### Antigravity 사용자
 ```bash
-git clone https://github.com/<your-account>/instructor-page-template.git
+git clone https://github.com/<your-account>/instructor-webpage-template.git
 ```
-Antigravity 앱에서 `instructor-page-template` 폴더를 열어주세요.
+Antigravity 앱에서 `instructor-webpage-template` 폴더를 열어주세요.
 
 > **세 에이전트 모두 `AGENTS.md`를 자동으로 읽습니다.** 별도 설정 불필요.
 
@@ -192,7 +192,7 @@ git push
 ## 폴더 구조 요약
 
 ```
-instructor-page-template/
+instructor-webpage-template/
 ├── README.md           ← 이 파일
 ├── AGENTS.md           ← AI 에이전트가 읽는 규칙 (사용자는 안 봐도 됨)
 ├── LICENSE             ← MIT
