@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notion Style Sample Section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: rgba(0, 0, 0, 0.95);
+      --white: #ffffff;
+      --warm-white: #f6f5f4;
+      --gray-500: #615d59;
+      --gray-300: #a39e98;
+      --notion-blue: #0075de;
+      --active-blue: #005bab;
+      --border-whisper: 1px solid rgba(0, 0, 0, 0.1);
+      --shadow-card: rgba(0, 0, 0, 0.04) 0 4px 18px, rgba(0, 0, 0, 0.02) 0 1px 4px;
+      --font-sans: "Inter", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--black);
+      background: var(--white);
+      font-family: var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .section {
+      background: linear-gradient(180deg, var(--white) 0%, var(--warm-white) 100%);
+      padding: 72px 20px;
+    }
+
+    .section-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      border: var(--border-whisper);
+      background: #f2f9ff;
+      color: #097fe8;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.125px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 780px;
+      font-size: clamp(36px, 7vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -1.8px;
+      font-weight: 700;
+    }
+
+    .lead {
+      margin: 18px 0 0;
+      max-width: 640px;
+      font-size: clamp(17px, 2.2vw, 20px);
+      line-height: 1.5;
+      color: var(--gray-500);
+      letter-spacing: -0.125px;
+    }
+
+    .actions {
+      margin-top: 28px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      padding: 10px 16px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .btn-primary {
+      background: var(--notion-blue);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--active-blue);
+    }
+
+    .btn-secondary {
+      color: var(--black);
+      background: rgba(0, 0, 0, 0.05);
+      border-color: rgba(0, 0, 0, 0.08);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .cards {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      padding: 18px;
+      border-radius: 12px;
+      border: var(--border-whisper);
+      background: var(--white);
+      box-shadow: var(--shadow-card);
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.35;
+      letter-spacing: -0.2px;
+      font-weight: 600;
+    }
+
+    .card p {
+      margin: 8px 0 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--gray-500);
+    }
+
+    .meta {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--gray-300);
+      letter-spacing: 0.12px;
+    }
+
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="section-inner">
+      <span class="eyebrow">Notion Style Sample</span>
+      <h1>아이디어를 문서로 정리하고, 바로 팀의 실행으로 연결하세요.</h1>
+      <p class="lead">웜 톤 배경, 절제된 보더, 블루 포인트 버튼만으로 Notion 특유의 담백한 집중감을 만든 단일 섹션 예시입니다.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#">무료로 시작하기</a>
+        <a class="btn btn-secondary" href="#">데모 보기</a>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h2>문서 + 작업을 한 화면에서</h2>
+          <p>회의 노트를 작성한 뒤 바로 체크리스트와 담당자를 지정해 실행 흐름으로 전환할 수 있습니다.</p>
+          <div class="meta">문서화 · 협업 · 실행</div>
+        </article>
+        <article class="card">
+          <h2>가벼운 규칙으로 빠르게 정리</h2>
+          <p>헤딩, 토글, 표 같은 기본 블록만으로도 구조가 잡혀 팀 전체의 맥락을 빠르게 공유할 수 있습니다.</p>
+          <div class="meta">구조화 · 검색성 · 가독성</div>
+        </article>
+        <article class="card">
+          <h2>확장 가능한 팀 위키</h2>
+          <p>작게 시작해도 페이지 간 연결이 자연스럽게 쌓여, 시간이 갈수록 더 강한 지식 베이스가 됩니다.</p>
+          <div class="meta">확장성 · 연결성 · 지속성</div>
+        </article>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

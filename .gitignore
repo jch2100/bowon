@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node (in case agent uses any tooling)
+node_modules/
+
+# Python (in case used for local server)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Browser automation cache (left over from local previews)
+.playwright-mcp/
+
+# User's local notes — not for committing
+NOTES.local.md
+TODO.local.md
